@@ -1,0 +1,43 @@
+
+.grid-container{
+        display: grid;
+        grid-template-areas: "A A"
+                             "B C"
+                             "B D"
+                             "E E" ;
+    }
+header{
+    grid-area: A;
+    
+}
+h2{
+    text-align: center;
+}
+.menu-navegacion{
+    grid-area: B;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    text-align: center;
+}
+.grid-menu{
+    display: grid;
+
+}
+.filtro-de-navegacion{
+    grid-area: C;
+}
+.seccion-principal{
+    grid-area: D;
+}
+footer{
+    grid-area: E;
+}
+.Pie{
+    display: flex;
+    flex-direction: column;
+}
+

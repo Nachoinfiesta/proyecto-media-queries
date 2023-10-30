@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.grid-container {
+  display: grid;
+  grid-template-areas: "A A" "B C" "B D" "E E";
+}
+body{
+  background: #007bff;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  .card{
+    width: 100%;
+  }
+  .menu-navegacion{
+    width: 30%;
+  }
+  .seccion-principal{
+    width: 70%;
+  }
+footer {
+  width: 30%;
+}
+}
+
+
+
+header {
+  grid-area: A;
+  background: #041f3b;
+  
+}
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.menu-navegacion {
+  grid-area: B;
+  background: #007bff;
+}
+.box{
+  color: aliceblue;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  text-align: center;
+}
+
+.grid-menu {
+  display: grid;
+}
+
+.filtro-de-navegacion {
+  grid-area: C;
+  background: #007bff;
+}
+
+.seccion-principal {
+  grid-area: D;
+  width: 100%;
+  background: #f1e3e3;
+}
+
+footer {
+  grid-area: E;
+  background: #007bff;
+}
+
+.Pie {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto  auto auto auto;
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+}
+
+.card {
+  flex: 1;
+  width: 90%; /* Ajusta el ancho de cada tarjeta con el margen */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #888;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+.box-redes{
+  font-size: 24px; 
+  margin: 5px; 
+  color: aliceblue; 
+}
+.box-pie{
+  color: aliceblue;
+}
